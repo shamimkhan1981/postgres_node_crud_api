@@ -55,7 +55,7 @@ INSERT INTO users (name, email)
 
 #### POST REQUEST TO CREATE USER PASS JESON VARIABLE USE IN THUNDERCIENT OR POSTMAN: <br>
 
-http://localhost:3000/users/
+http://localhost:5000/users/
 
 {
 "name": "Shamim",
@@ -64,7 +64,7 @@ http://localhost:3000/users/
 
 #### PUT REQUEST TO UPDATE EXISTING USER WITH ID (3) DETAIL SEND IN JESON VARIABLE USE IN THUNDERCIENT OR POSTMAN: <br>
 
-http://localhost:3000/users/3
+http://localhost:5000/users/3
 
 {
 "name": "Sadik",
@@ -73,9 +73,25 @@ http://localhost:3000/users/3
 
 #### DELETE REQUEST - DELETE USER WITH ID (3) DETAIL SEND IN JESON VARIABLE USE IN THUNDERCIENT OR POSTMAN: <br>
 
-http://localhost:3000/users/3
+http://localhost:5000/users/3
 
 {
 "name": "Sadik",
 "email": "shamim@abc.com"
 }
+
+#### GET LOCALITY DATA: <br>
+
+http://localhost:5000/locality <br>
+
+#### GET LOCALITY BY ID: <br>
+
+http://localhost:5000/localityid/1 <br>
+
+#### GET CATCHMENT DATA: <br>
+
+http://localhost:5000/catchment <br>
+
+#### GET CATCHMENT BY ID: <br>
+
+http://localhost:5000/catchmentid/1 <br>
