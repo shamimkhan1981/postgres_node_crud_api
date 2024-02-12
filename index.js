@@ -16,6 +16,7 @@ app.get("/", (request, response) => {
 });
 
 // Now, for each endpoint, we’ll set the HTTP request method, the endpoint URL path, and the relevant function:
+app.get("/propertyid/:id", db.propertyid); //17, 18, 19, 20 id's
 app.get("/localityid/:id", db.localityid);
 app.get("/locality", db.locality);
 app.get("/catchment", db.catchment);

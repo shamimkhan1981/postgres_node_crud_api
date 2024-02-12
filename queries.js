@@ -24,6 +24,21 @@ const pool = new Pool({
   port: port,
 });
 
+// GET PROPERTY BY ID
+const propertyid = (request, response) => {
+  const id = parseInt(request.params.id);
+  pool.query(
+    "SELECT smdata FROM property WHERE id = $1",
+    [id],
+    (error, results) => {
+      if (error) {
+        throw error;
+      }
+      response.status(200).json(results.rows);
+    }
+  );
+};
+
 // GET LOCALITY
 const locality = (request, response) => {
   pool.query(
@@ -171,4 +186,5 @@ module.exports = {
   catchmentid,
   locality,
   localityid,
+  propertyid,
 };
